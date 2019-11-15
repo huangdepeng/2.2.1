@@ -445,7 +445,7 @@ namespace hicbit {
             else
                 Turn = 3;//电机1：反 电机2：反
         }
-        let buf = pins.createBuffer(4);
+        let buf = pins.createBuffer(5);
         buf[0] = 0x58;
         buf[1] = Turn;
         buf[2] = speed1;
