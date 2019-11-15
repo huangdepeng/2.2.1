@@ -381,6 +381,7 @@ namespace hicbit {
         buf[5] = time;
         serial.writeBuffer(buf);
         serial.writeString(NEW_LINE);
+        basic.pause(time*1000);
     }
 
     /**
@@ -1325,7 +1326,7 @@ namespace Sensor{
             default:
                 return 0;
         }
-        basic.pause(1000);
+        
     }
 
 }
